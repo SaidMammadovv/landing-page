@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/a82a0e6333.js"
+      crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Your Order</h1>
+      <form action="" method="post">
+        <div class="row-1">
+          <div class="first-section">
+            <label for="order-name">Name</label>
+            <input
+              type="text"
+              name="order-name"
+              id="order-name"
+              placeholder="Your full name"
+              autofocus
+              />
+          </div>
+          <div class="second-section">
+            <label for="order-email">Email Address</label>
+            <input
+              type="email"
+              name="order-email"
+              id="order-email"
+              disabled
+              value="memmed.seid@mail.ru"
+              />
+          </div>
+        </div>
+        <div class="row-2">
+          <label for="order-address-1">Address</label>
+          <input type="text" name="order-address-1" id="order-address-1" />
+          <input type="text" name="order-address-2" id="order-address-2" />
+        </div>
+        <div class="row-3">
+          <div class="city-information">
+            <label for="order-city">City</label>
+            <input type="text" name="order-city" id="order-city" />
+          </div>
+          <div class="state-dropdown">
+            <label for="order-state">State</label>
+            <select name="order-state" id="order-state">
+              <option value="Alabama">Alabama</option>
+              <option value="Alabama">Alaska</option>
+              <option value="Alabama">Antractita</option>
+              <option value="Alabama">Cold Ice</option>
+            </select>
+          </div>
+          <div class="zip-information">
+            <label for="order-zip">Zip</label>
+            <input type="text" name="order-zip" id="order-zip" />
+          </div>
+        </div>
+        <div class="row-4">
+          <label for="order-color-sample">what color sample should we send you?</label>
+          <label for="sample-white">
+            <input type="checkbox" name="color-sample" id="sample-white"
+              value="white" disabled/> White
+          </label>
+          <label for="sample-magenta">
+            <input type="checkbox" name="color-sample" id="sample-magenta"
+              value="magenta"/> Magenta
+          </label>
+          <label for="sample-coral">
+            <input type="checkbox" name="color-sample" id="sample-coral"
+              value="coral"/> Coral
+          </label>
+          <label for="sample-burgundy">
+            <input type="checkbox" name="color-sample" id="sample-burgundy"
+              value="burgundy"/> Burgundy
+          </label>
+          <label for="sample-charcoal">
+            <input type="checkbox" name="color-sample" id="sample-charcoal"
+              value="charcoal"/> Charcoal
+          </label>
+        </div>
+        <div class="row-5">
+          <label>How large is your team?</label>
+          <label for="team-small">
+            <input type="radio" name="team-size" id="team-small" value="1-5"/>
+            1-5 People
+          </label>
+          <label for="team-medium">
+            <input type="radio" name="team-size" id="team-medium" value="6-10"
+              checked/> 6-10 People
+          </label>
+          <label for="team-large">
+            <input type="radio" name="team-size" id="team-large" value="10+"/>
+            10+ People
+          </label>
+        </div>
+        <div class="row-6">
+          <label style="text-align: center;" for="order-comments">Comments</label>
+          <br>
+          <textarea name="order-comments" id="order-comments" cols="30"
+            rows="10"></textarea>
+        </div>
+        <div class="row-7">
+          <label for="offer-signup">
+            <input type="checkbox" name="offer-signup" id="offer-signup">
+            Sign up For special offers
+          </label>
+          <input type="button" value="Place Order">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

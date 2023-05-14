@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners: Example 3-13-1</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+      }
+
+      .card {
+        border-radius: 16px;
+        width: 561px;
+        height: 297px;
+      }
+	  .card .stats li .game,.win-rate{
+		color: gray;
+	  }
+	  .card h2{
+		margin-left: 35px;
+	  }
+      .stats {
+        list-style: none;
+        list-style-position: inside;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-left: 45px;
+        white-space: nowrap;
+      }
+      .stats li {
+        list-style-position: inside;
+      }
+      #viking {
+        background-image: url(img/bg-elephant-2x.jpg);
+		background-size: 100%;
+      }
+	  #sorceress{
+		background-image: url(img/bg-cat.jpg);
+	  }
+	  #fashionista{
+		background-image: url(img/bg-bunny.jpg);
+	  }
+    </style>
+  </head>
+  <body>
+    <div class="card" id="viking">
+      <h2>The Viking</h2>
+
+      <ul class="stats">
+        <li>
+          <p class="title"><strong>68%</strong></p>
+          <p class="win-rate">Win Rate</p>
+        </li>
+        <li>
+          <p class="title"><strong>522</strong></p>
+          <p class="game">Games Played</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card" id="sorceress">
+		<h2>The Sorceress</h2>
+
+		<ul class="stats">
+		  <li>
+			<p class="title"><strong>68%</strong></p>
+			<p class="win-rate">Win Rate</p>
+		  </li>
+		  <li>
+			<p class="title"><strong>422</strong></p>
+			<p class="game">Games Played</p>
+		  </li>
+		</ul>
+    </div>
+
+    <div class="card" id="fashionista">
+		<h2>The Fashionista</h2>
+
+		<ul class="stats">
+		  <li>
+			<p class="title"><strong>90%</strong></p>
+			<p class="win-rate">Win Rate</p>
+		  </li>
+		  <li>
+			<p class="title"><strong>200</strong></p>
+			<p class="game">Games Played</p>
+		  </li>
+		</ul>
+	</div>
+  </body>
+</html>
