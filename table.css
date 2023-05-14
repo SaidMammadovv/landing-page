@@ -124,3 +124,17 @@ nav ul li a:hover{
 .btns button:hover{
     background-color: #7f00ff;
 }
+.imgBox{
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    
+}
+.imgBox img{
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    max-width: 900px;
+}
